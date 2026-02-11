@@ -9,7 +9,7 @@
 **Goal:** Calculate a discount percentage based on User, Order, and Time data without using `if` statements.
 
 **Rules:**
-1. **Name Match:** "Caren" -> 20%
+1. **Name Match:** "Nantus" -> 20%
 2. **Loyalty:** VIP & > 5 Years -> 15%
 3. **Daily Special:** Tuesday & Not Groceries -> 10%
 4. **Volume:** Total > 1000 -> 5%
@@ -21,7 +21,7 @@
   ```csharp
   return input switch
   {
-      { Name: "Caren" } => 0.20m,
+      { Name: "Nantus" } => 0.20m,
       { IsVip: true, Years: > 5 } => 0.15m,
       _ => 0m
   };
